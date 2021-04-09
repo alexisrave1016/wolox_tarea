@@ -1,0 +1,136 @@
+body {
+    width: 900px;
+    height: 416px;
+    box-sizing: border-box;
+
+}
+
+.logo img {
+    height: 380px;
+    width: 250px;
+    margin: 10px 20px 20px 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.title h1 {
+    font-weight: 900;
+    font-size: 25px;
+    margin: 40px 10px 20px 10px;
+}
+
+.title h3 {
+    font-size: 20px;
+    color: rgb(136, 139, 133);
+    font-weight: 600;
+    margin: 40px 10px 20px 0;
+}
+
+.title {
+    display: flex;
+}
+
+hr {
+    margin: 10px;
+    border: none;
+    height: 5px;
+    /* Set the hr color */
+    color: #333;
+    /* old IE */
+    background-color: rgb(177, 231, 52);
+    /* Modern Browsers */
+}
+
+.parrafo {
+    width: 590px;
+    ;
+}
+
+.text p {
+    margin: 5px 10px 20px 10px;
+    color: rgb(136, 139, 133);
+    font-size: 20px;
+}
+
+.text {
+    margin: 40px 10px 20px 0px;
+}
+
+/* mobile first */
+@media (max-width: 414px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: cornflowerblue;
+        align-items: center;
+    }
+
+    .title {
+        height: 530px;
+        background-color: chocolate;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0%;
+
+    }
+
+    .logo img {
+        position: absolute;
+        top: -55px;
+        left: 50px;
+    }
+
+    body {
+        font-size: 15px;
+
+    }
+}
+
+/* tabletas */
+@media (max-width: 853px) {
+    .title {
+        display: flex;
+        flex-direction: column;
+        width: 38%;
+        text-align: center;
+
+    }
+
+    .title h1 {
+        font-weight: 900;
+        font-size: 25px;
+        margin: 30px 10px 0px 10px;
+    }
+
+    .title h3 {
+        margin: 15px;
+    }
+
+    .logo img {
+        margin: 110px 0 0 35px;
+        width: 270px;
+        height: 420px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .text p {
+        margin: 10px 10px 20px 20px;
+        color: rgb(136, 139, 133);
+        font-size: 20px;
+    }
+
+    .text {
+        margin: 160px 0 0 0;
+    }
+
+    body {
+        font-size: 15px;
+    }
+}
